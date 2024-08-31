@@ -1,0 +1,59 @@
+{
+    "可用名字": {
+        "木镐": "wooden_pickaxe",
+        "金镐": "golden_pickaxe",
+        "石镐": "stone_pickaxe",
+        "铁镐": "iron_pickaxe",
+        "钻石镐": "diamond_pickaxe",
+        "下界合金镐": "netherite_pickaxe",
+
+        "木斧": "wooden_axe",
+        "金斧": "golden_axe",
+        "石斧": "stone_axe",
+        "铁斧": "iron_axe",
+        "钻石斧": "diamond_axe",
+        "下界合金斧": "netherite_axe",
+
+        "木锄": "wooden_hoe",
+        "金锄": "golden_hoe",
+        "石锄": "stone_hoe",
+        "铁锄": "iron_hoe",
+        "钻石锄": "diamond_hoe",
+        "下界合金锄": "netherite_hoe",
+
+        "木铲": "wooden_shovel",
+        "金铲": "golden_shovel",
+        "石铲": "stone_shovel",
+        "铁铲": "iron_shovel",
+        "钻石铲": "diamond_shovel",
+        "下界合金铲": "netherite_shovel",
+
+        "剪刀":"shears"
+    },
+    "附魔数据": {
+        "通用": {
+            "适用附魔": [
+                "效率",
+                "时运",
+                "精准采集",
+                "经验修补",
+                "耐久",
+                "消失诅咒"
+            ],
+            "最强附魔": {
+                "时运": [
+                    "效率",
+                    "时运",
+                    "经验修补",
+                    "耐久"
+                ],
+                "精准采集": [
+                    "效率",
+                    "精准采集",
+                    "经验修补",
+                    "耐久"
+                ]
+            }
+        }
+    }
+}

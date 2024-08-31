@@ -1,0 +1,60 @@
+{
+    "可用名字": {
+        "皮革头盔": "leather_helmet",
+        "金头盔": "golden_helmet",
+        "锁链头盔": "chainmail_helmet",
+        "铁头盔": "iron_helmet",
+        "钻石头盔": "diamond_helmet",
+        "下界合金头盔": "netherite_helmet",
+
+        "皮革胸甲": "leather_chestplate",
+        "金胸甲": "golden_chestplate",
+        "锁链胸甲": "chainmail_chestplate",
+        "铁胸甲": "iron_chestplate",
+        "钻石胸甲": "diamond_chestplate",
+        "下界合金胸甲": "netherite_chestplate",
+
+        "皮革护腿": "leather_leggings",
+        "金护腿": "golden_leggings",
+        "锁链护腿": "chainmail_leggings",
+        "铁护腿": "iron_leggings",
+        "钻石护腿": "diamond_leggings",
+        "下界合金护腿": "netherite_leggings",
+
+        "皮革靴子": "leather_boots",
+        "金靴子": "golden_boots",
+        "锁链靴子": "chainmail_boots",
+        "铁靴子": "iron_boots",
+        "钻石靴子": "diamond_boots",
+        "下界合金靴子": "netherite_boots"
+    },
+    "附魔数据": {
+        "通用": {
+            "适用附魔": [
+                "保护",
+                "火焰保护",
+                "爆炸保护",
+                "弹射物保护",
+                "荆棘",
+                "水下呼吸",
+                "水下速掘",
+                "灵魂疾行",
+                "冰霜行者",
+                "绑定诅咒",
+                "消失诅咒",
+                "耐久",
+                "经验修补"
+            ],
+            "最强附魔": {
+                "保护": [
+                    "保护",
+                    "水下呼吸",
+                    "水下速掘",
+                    "灵魂疾行",
+                    "耐久",
+                    "经验修补"
+                ]
+            }
+        }
+    }
+}
