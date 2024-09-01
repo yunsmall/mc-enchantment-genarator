@@ -19,10 +19,6 @@ SelectWindow::SelectWindow(QWidget *parent) :
     ui->setupUi(this);
 
     loadDatas();
-    // gen_machine->changeCurrentItem("剑");
-    // gen_machine->setToSurvivalBestEnch();
-    // gen_machine->trySettingInGameName("下界合金剑");
-
     setValidator();
 
     //工具栏
@@ -96,7 +92,7 @@ SelectWindow::SelectWindow(QWidget *parent) :
         if(ui->all_255->isChecked()) {
             setCheckedToLvl(255);
         }
-        else {
+        else if(ui->all_32767->isChecked()) {
             setCheckedToLvl(32767);
         }
     });
@@ -190,13 +186,16 @@ void SelectWindow::showPreinstallCombo() {
     ui->preinstall_combo->addItems(name_list);
 }
 
-void SelectWindow::showSuitableEnchs() {
-    //删除原有所有控件
+void SelectWindow::clearAllShownEnchs() {
     QLayoutItem* child;
     while((child=ui->scroll_layout->takeAt(0))!=nullptr) {
         if(child->widget())delete child->widget();
         delete child;
     }
+}
+
+void SelectWindow::showSuitableEnchs() {
+    clearAllShownEnchs();
 
     for(const auto& [i,name]:std::views::zip(std::ranges::iota_view(0),gen_machine->get_suitable_enchantments())) {
         auto* name_label=new QLabel(QString::fromStdString(name),this);
@@ -213,12 +212,7 @@ void SelectWindow::showSuitableEnchs() {
 }
 
 void SelectWindow::showAllEnchs() {
-    //删除原有所有控件
-    QLayoutItem* child;
-    while((child=ui->scroll_layout->takeAt(0))!=nullptr) {
-        if(child->widget())delete child->widget();
-        delete child;
-    }
+    clearAllShownEnchs();
 
     for(const auto& [i,name]:std::views::zip(std::ranges::iota_view(0),(*gen_machine->get_enchant_types())|std::views::transform([](auto& ench){return ench.name;}))) {
         auto* name_label=new QLabel(QString::fromStdString(name),this);

@@ -39,6 +39,8 @@ private:
     void setSubItemNamesCombo();
     void showPreinstallCombo();
 
+    void clearAllShownEnchs();
+
     void showSuitableEnchs();
     void showAllEnchs();
 
