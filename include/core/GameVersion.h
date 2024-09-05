@@ -34,7 +34,9 @@ struct GameVersion {
             }
         }
         else {
-            memset(data,0,sizeof(data));
+            data[0]=0;
+            data[1]=0;
+            data[2]=0;
         }
     }
 

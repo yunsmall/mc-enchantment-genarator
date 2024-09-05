@@ -4,6 +4,7 @@
 
 #include "core/EnchGenMachine.h"
 
+#include <algorithm>
 #include <sstream>
 #include <ranges>
 
