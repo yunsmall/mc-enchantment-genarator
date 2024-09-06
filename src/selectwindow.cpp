@@ -127,8 +127,8 @@ SelectWindow::~SelectWindow() {
 
 void SelectWindow::loadDatas() {
     GenEnch::JsonReader json_reader;
-    auto ench_types=json_reader.readEnchDatas(ench_types_path);
-    auto ench_items=json_reader.readItems(ench_items_dir_path);
+    auto ench_types=json_reader.readEnchDatas(std::filesystem::path(QApplication::applicationDirPath().toStdString())/ench_types_path);
+    auto ench_items=json_reader.readItems(std::filesystem::path(QApplication::applicationDirPath().toStdString())/ench_items_dir_path);
 
     gen_machine=std::make_unique<decltype(gen_machine)::element_type>(ui->version_combo_box->currentText().toStdString(),ench_types,ench_items);
 
